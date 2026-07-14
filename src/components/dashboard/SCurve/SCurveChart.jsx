@@ -9,8 +9,7 @@ import {
 } from "recharts";
 
 import { sCurveData } from "@/mocks/dashboard/scurve";
-
-
+  
 export default function SCurveChart() {
   return (
     <ResponsiveContainer width="100%" height={380}>
@@ -23,10 +22,7 @@ export default function SCurveChart() {
           bottom: 10,
         }}
       >
-        <CartesianGrid
-          stroke="#E2E8F0"
-          strokeDasharray="4 4"
-        />
+        <CartesianGrid stroke="#E2E8F0" strokeDasharray="4 4" />
 
         <XAxis
           dataKey="month"
