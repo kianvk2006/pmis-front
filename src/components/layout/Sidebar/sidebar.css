@@ -1,0 +1,86 @@
+/* ==========================
+   Sidebar Scrollbar
+========================== */
+
+.sidebar-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #475569 transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 999px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* ==========================
+   Smooth Animation
+========================== */
+
+.sidebar-item {
+    transition:
+        background-color .25s ease,
+        transform .25s ease,
+        color .25s ease;
+}
+
+.sidebar-item:hover {
+    transform: translateX(4px);
+}
+
+/* ==========================
+   Active Item
+========================== */
+
+.sidebar-active {
+    background: linear-gradient(
+        90deg,
+        rgba(249,115,22,.18),
+        rgba(249,115,22,.05)
+    );
+
+    border-right: 4px solid #f97316;
+}
+
+/* ==========================
+   Focus
+========================== */
+
+.sidebar-item:focus-visible {
+    outline: 2px solid #fb923c;
+    outline-offset: 2px;
+}
+
+/* ==========================
+   User Card
+========================== */
+
+.user-card {
+
+    transition: .3s;
+}
+
+.user-card:hover {
+
+    background: rgba(255,255,255,.04);
+}
+
+/* ==========================
+   Collapse
+========================== */
+
+.sidebar-collapse {
+
+    transition: width .3s ease;
+}
