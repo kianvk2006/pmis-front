@@ -8,6 +8,7 @@ import ExecutionDashboardPage from "@/pages/ExecutionDashboard";
 import Materials from "@/pages/Materials";
 import SiteDashboardPage from "@/pages/SiteDashboard";
 import SiteReports from "@/pages/SiteReports";
+import Gantt from "@/pages/Gantt";
 
 export default function AppRouter() {
   return (
@@ -32,6 +33,7 @@ export default function AppRouter() {
         <Route path="/dashboard/site" element={<SiteDashboardPage />} />
 
         <Route path="/dashboard/site-reports" element={<SiteReports />} />
+        <Route path="/dashboard/gantt" element={<Gantt />} />
       </Routes>
     </BrowserRouter>
   );
